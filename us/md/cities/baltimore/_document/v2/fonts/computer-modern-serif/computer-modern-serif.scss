@@ -15,7 +15,8 @@
   @font-face {
     font-family: "#{$fontName}";
     src: url("#{$fileName}.woff2") format("woff2"),
-        url("#{$fileName}.woff") format("woff");
+        url("#{$fileName}.woff") format("woff"),
+        url("#{$fileName}.ttf") format("truetype");
     font-weight: #{$fontWeight};
     font-style: #{$fontStyle};
     font-display: swap;
@@ -23,10 +24,10 @@
 }
 
 // Normal
-@include fontFace("Libre Baskerville", "librebaskerville-regular", "400", "normal");
+@include fontFace("Computer Modern Serif", "computer-modern-serif-roman", "400", "normal");
 // Italic
-@include fontFace("Libre Baskerville", "librebaskerville-italic", "400", "italic");
+@include fontFace("Computer Modern Serif", "computer-modern-serif-italic", "400", "italic");
 // Bold
-@include fontFace("Libre Baskerville", "librebaskerville-bold", "700", "normal");
+@include fontFace("Computer Modern Serif", "computer-modern-serif-bold", "700", "normal");
 // Bold Italic
-@include fontFace("Libre Baskerville", "librebaskerville-italic", "700", "italic");
+@include fontFace("Computer Modern Serif", "computer-modern-serif-bold-italic", "700", "italic");
